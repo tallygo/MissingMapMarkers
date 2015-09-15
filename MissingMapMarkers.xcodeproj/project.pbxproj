@@ -14,6 +14,8 @@
 		AFE423A81BA8D27100DEE65D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE423A71BA8D27100DEE65D /* Images.xcassets */; };
 		AFE423AB1BA8D27100DEE65D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE423A91BA8D27100DEE65D /* LaunchScreen.xib */; };
 		AFE423B71BA8D27100DEE65D /* MissingMapMarkersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE423B61BA8D27100DEE65D /* MissingMapMarkersTests.m */; };
+		AFE423C11BA8D32900DEE65D /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = AFE423C01BA8D32900DEE65D /* podfile */; };
+		F72135CB27A5B6E492FD47FB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0AB22D64C9C2B0216AAB21 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D0AB22D64C9C2B0216AAB21 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE423971BA8D27100DEE65D /* MissingMapMarkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissingMapMarkers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE4239B1BA8D27100DEE65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE4239C1BA8D27100DEE65D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		AFE423B01BA8D27100DEE65D /* MissingMapMarkersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MissingMapMarkersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE423B51BA8D27100DEE65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE423B61BA8D27100DEE65D /* MissingMapMarkersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MissingMapMarkersTests.m; sourceTree = "<group>"; };
+		AFE423C01BA8D32900DEE65D /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		B2ADEB0073695119BCFABD5C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EFB0B947A5515ED0E719D0F2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72135CB27A5B6E492FD47FB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B70EA455B3EF0798AC0A0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D0AB22D64C9C2B0216AAB21 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFE4238E1BA8D27100DEE65D = {
 			isa = PBXGroup;
 			children = (
 				AFE423991BA8D27100DEE65D /* MissingMapMarkers */,
 				AFE423B31BA8D27100DEE65D /* MissingMapMarkersTests */,
 				AFE423981BA8D27100DEE65D /* Products */,
+				AFE423C01BA8D32900DEE65D /* podfile */,
+				DDE87BE5CDFBC2CAD9D3534C /* Pods */,
+				3B70EA455B3EF0798AC0A0B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +137,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DDE87BE5CDFBC2CAD9D3534C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFB0B947A5515ED0E719D0F2 /* Pods.debug.xcconfig */,
+				B2ADEB0073695119BCFABD5C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE423BA1BA8D27100DEE65D /* Build configuration list for PBXNativeTarget "MissingMapMarkers" */;
 			buildPhases = (
+				CA3679437C0A8EB9C7695376 /* Check Pods Manifest.lock */,
 				AFE423931BA8D27100DEE65D /* Sources */,
 				AFE423941BA8D27100DEE65D /* Frameworks */,
 				AFE423951BA8D27100DEE65D /* Resources */,
+				27B5E818DB0F93ED4261F9A7 /* Embed Pods Frameworks */,
+				84CACF7DA0B1EB02A7B66923 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +198,11 @@
 				TargetAttributes = {
 					AFE423961BA8D27100DEE65D = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					AFE423AF1BA8D27100DEE65D = {
 						CreatedOnToolsVersion = 6.4;
@@ -201,6 +236,7 @@
 			files = (
 				AFE423A61BA8D27100DEE65D /* Main.storyboard in Resources */,
 				AFE423AB1BA8D27100DEE65D /* LaunchScreen.xib in Resources */,
+				AFE423C11BA8D32900DEE65D /* podfile in Resources */,
 				AFE423A81BA8D27100DEE65D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +249,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27B5E818DB0F93ED4261F9A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84CACF7DA0B1EB02A7B66923 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3679437C0A8EB9C7695376 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFE423931BA8D27100DEE65D /* Sources */ = {
@@ -345,6 +429,7 @@
 		};
 		AFE423BB1BA8D27100DEE65D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB0B947A5515ED0E719D0F2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MissingMapMarkers/Info.plist;
@@ -355,6 +440,7 @@
 		};
 		AFE423BC1BA8D27100DEE65D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2ADEB0073695119BCFABD5C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MissingMapMarkers/Info.plist;
@@ -416,6 +502,7 @@
 				AFE423BC1BA8D27100DEE65D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFE423BD1BA8D27100DEE65D /* Build configuration list for PBXNativeTarget "MissingMapMarkersTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +511,7 @@
 				AFE423BF1BA8D27100DEE65D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

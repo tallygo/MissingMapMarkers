@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mapbox.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MGLMapViewDelegate>
 
 
 @end
