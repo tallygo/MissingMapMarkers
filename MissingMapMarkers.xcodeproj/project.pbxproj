@@ -15,7 +15,7 @@
 		AFE423AB1BA8D27100DEE65D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE423A91BA8D27100DEE65D /* LaunchScreen.xib */; };
 		AFE423B71BA8D27100DEE65D /* MissingMapMarkersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE423B61BA8D27100DEE65D /* MissingMapMarkersTests.m */; };
 		AFE423C11BA8D32900DEE65D /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = AFE423C01BA8D32900DEE65D /* podfile */; };
-		F72135CB27A5B6E492FD47FB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0AB22D64C9C2B0216AAB21 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F72135CB27A5B6E492FD47FB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0AB22D64C9C2B0216AAB21 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
